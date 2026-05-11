@@ -1,0 +1,101 @@
+/* Styles généraux */
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F1E9; /* Beige clair */
+    color: #4A3B2A; /* Marron foncé */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Bande Header fixe avec logo Modana */
+.header {
+    background-color: #7A5F47; /* Marron chaud */
+    width: 100%;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-start; /* Aligner à gauche */
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.slogan {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    font-weight: 400; /* Maigre */
+    color: white; /* Blanc */
+    margin-left: 10px; /* Espacement avec le logo */
+    opacity: 0.8; /* Légère transparence pour un effet doux */
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #F8F1E9; /* Blanc cassé */
+}
+
+/* Section Contact */
+.contact {
+    margin-top: 80px; /* Ajoute de l'espace pour la bande fixe */
+    background-color: #FFFFFF; /* Fond blanc pour meilleur contraste */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Limite la largeur de la section */
+    text-align: center;
+}
+
+.contact h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #4A3B2A;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #4A3B2A;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.contact-item a {
+    color: #4A3B2A; /* Marron foncé */
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.contact-item a:hover {
+    color: #7A5F47; /* Marron doux */
+}
+
+/* Pour les icônes */
+.contact-icon {
+    width: 50px !important; /* Agrandir l'icône et forcer la taille */
+    height: 50px !important; /* Agrandir l'icône et forcer la taille */
+    border-radius: 50%; /* Arrondir l'icône */
+    object-fit: cover; /* S'assurer que l'image est bien dimensionnée */
+    margin-right: 15px; /* Un petit espace avant le texte */
+}
+
+/* Pour s'assurer que les icônes spécifiques (comme Facebook et Vinted) sont aussi de la bonne taille */
+.contact-item img {
+    width: 50px !important;  /* Réajuster la taille pour ces icônes spécifiques */
+    height: 50px !important;  /* Réajuster la taille pour ces icônes spécifiques */
+    border-radius: 50%;
+}
